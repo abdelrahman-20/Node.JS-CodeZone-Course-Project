@@ -15,9 +15,9 @@ require("dotenv").config();
 // Using Mongoose to Connect to MongoDB
 const mongoose = require("mongoose");
 // Remote Database Server
-// const url = process.env.MONGODB_URL;
+const url = process.env.MONGODB_URL;
 // Local Database Server
-const url = "mongodb://localhost:27017/";
+// const url = "mongodb://localhost:27017/";
 mongoose.connect(url).then(() => {
   console.log(`Connected To Database Successfully`);
 });
